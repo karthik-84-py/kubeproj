@@ -10,4 +10,4 @@ RUN yum install -y unzip && unzip photogenic.zip && rm photogenic.zip
 EXPOSE 80
 
 #start apache http server
-CMD ["httpd", "-D", "FOREGROUND"]
+CMD ["httpd", "-D", "FOREGROUND"] 
