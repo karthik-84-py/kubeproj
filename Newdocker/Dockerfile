@@ -3,7 +3,7 @@ FROM centos/httpd
 
 #Download and unzip the web content
 #ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html
-COPY /var/www/html/photogenic.zip /var/www/html/photogenic.zip
+COPY photogenic.zip /var/www/html/photogenic.zip
 WORKDIR /var/www/html
 RUN yum install -y unzip && unzip photogenic.zip && rm photogenic.zip
 
