@@ -3,8 +3,9 @@ FROM centos/httpd
 
 #Download and unzip the web content
 #ADD https://www.free-css.com/assets/files/free-css-templates/download/page254/photogenic.zip /var/www/html
+COPY /var/www/html/photogenic.zip /var/www/html/photogenic.zip
 WORKDIR /var/www/html
-RUN yum install -y unzip && unzip /var/www/html/photogenic.zip && rm /var/www/html/photogenic.zip
+RUN yum install -y unzip && unzip photogenic.zip && rm photogenic.zip
 
 #Expose Port 80 for HTTP
 EXPOSE 80
